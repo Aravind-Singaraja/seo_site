@@ -303,3 +303,127 @@ section{
 
 
 }
+glass {
+  text-align: center; /* center headings + paragraphs */
+}
+
+.glass ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  display: inline-block; /* keeps it centered as a block */
+  text-align: left; /* keeps list readable */
+}
+
+.glass ul li {
+  position: relative;
+  padding-left: 22px;
+  margin: 8px 0;
+}
+
+.glass ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+  font-size: 18px;
+}
+.contact-box {
+  text-align: center;
+}
+
+.contact-details {
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn.call {
+  background: #00ff88;
+}
+
+.btn.whatsapp {
+  background: #25D366;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,255,136,0.5);
+}
+.glass-footer {
+  margin: 80px auto 20px;
+  padding: 50px 30px 20px;
+  max-width: 1200px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(0, 255, 136, 0.15);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #00ff88;
+  margin-bottom: 12px;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #00ff88;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
